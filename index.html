@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Draw App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/1a8bb7941b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <h1>Draw App<br>using<br><span>Canvas</span> & <span>JS</span></h1>
+            <button id="start">Start here</button>
+        </div>
+        <div class="app-container">
+            <ul class="toolbox">
+                <li>
+                    <label for="width"></label>
+                    <input type="range" id="width" min="2" max="40" step="2" value="2">
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="color" id="color">
+                </li>
+                <li>
+                    <button class="tools" id="undo"><i class="fas fa-undo"></i></button>
+                </li>
+                <li>
+                    <button class="tools" id="download"><i class="fas fa-download"></i></button>
+                </li>
+                <li>
+                    <button class="tools" id="print"><i class="fas fa-print"></i></button>
+                </li>
+                <li>
+                    <button class="tools" id="clear"><i class="fas fa-trash-alt"></i></button>
+                </li>
+            </ul>
+            <canvas>Your browser does not support canvas</canvas>
+        </div>
+        <footer>
+            <p><a href="">View my code <i class="fab fa-github"></i></a></p>
+        </footer>
+    </main>
+   
+</body>
+</html>
